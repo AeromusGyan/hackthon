@@ -1,0 +1,40 @@
+
+<mat-card>
+    <div class="home">
+    <form>
+        <div class="form-group">
+            <label for="name">Name : </label>
+            <input type="name"  [(ngModel)]="myData.name"  name="name" placeholder="Enter name">
+          </div>
+      <div class="form-group">
+        <label for="email">Email address : </label>
+        <input type="email"  [(ngModel)]="myData.email"  name="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password : </label>
+        <input type="password" [(ngModel)]="myData.password"  name="password" placeholder="Password">
+      </div>
+      
+      <button mat-raised-button color="primary" (click)="login()">Submit</button>
+    </form>
+</div>
+</mat-card>
+
+<!-- 
+<div class="home">
+    <form action="">
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" name="name" [(ngModel)]="mydata.name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" name="email" [(ngModel)]="mydata.email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password : </label>
+            <input type="password"  name="password"  [(ngModel)]="mydata.password">
+        </div>
+        <button mat-raised-button color="primary" (click)="login()">Submit</button>
+    </form>
+</div> -->
