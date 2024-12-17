@@ -6,8 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
 import { HackthonComponent } from './hackthon/hackthon.component';
 import { AboutComponent } from './about/about.component';
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,8 @@ import { AboutComponent } from './about/about.component';
   imports: [
     CommonModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ]
 })
 export class MainModule { }

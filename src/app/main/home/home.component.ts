@@ -8,18 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   stringifiedData:any;
-  myData = {  
-
-    name:"",
-    email: "",  
-    password: ""
-  };  
+  myData = {name:"", email: "", password: "" };  
   constructor() { }
 
   ngOnInit(): void {
     console.log(this.myData);  
     // Convert to JSON  
-    this.stringifiedData = JSON.stringify(this.myData);  
+    this.stringifiedData = JSON.stringify(this.myData);
     console.log("With Stringify :" , this.stringifiedData);  
   }
   login(){

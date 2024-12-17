@@ -2,9 +2,32 @@
 <div>
     <div>
         <marquee behavior="alternate" direction=""><h1>It is a <strong>Hackthon Page</strong> </h1></marquee>
-
     </div>
-    <div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Question</th>
+            <th scope="col">Option 1</th>
+            <th scope="col">Option 2</th>
+            <th scope="col">Option 3</th>
+            <th scope="col">Option 4</th>
+            <th scope="col">Correct Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let qns of allquestion; index as i">
+            <th scope="row">{{i+1}}</th>
+            <td>{{qns.question}}</td>
+            <td>{{qns.option1}}</td>
+            <td>{{qns.option2}}</td>
+            <td>{{qns.option3}}</td>
+            <td>{{qns.option4}}</td>
+            <td>{{qns.answer}}</td>
+          </tr>
+        </tbody>
+      </table>
+    <!-- <div>  
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias voluptates deleniti dolorem cupiditate unde sunt molestiae, fugit sit voluptatem suscipit ut itaque ab minima. Nam nihil soluta voluptatibus sed!
             Quae dolores, nemo beatae architecto veritatis sed omnis laborum praesentium, aspernatur modi rem eaque esse nostrum velit, distinctio itaque? Autem temporibus ab aliquid ratione eius rerum repellendus placeat tempore error!
@@ -16,6 +39,5 @@
             Error eum, iusto, quisquam nesciunt enim expedita sunt placeat laborum aperiam obcaecati asperiores sit natus fugit autem, praesentium quidem rerum architecto reprehenderit itaque. Voluptate, velit labore quas iure tempora nihil.
             Quasi, corrupti? Inventore omnis possimus eum nostrum velit earum exercitationem quia delectus incidunt harum asperiores nemo, sapiente aspernatur molestias fugit necessitatibus facere id consequatur architecto ad distinctio. Dolorum, porro quo.
             Optio quasi veniam voluptates maiores exercitationem aperiam harum, eaque error vitae minus sint libero, iure repellat aliquam nemo incidunt nulla ratione possimus quas? Voluptatum delectus quaerat at laboriosam, similique dolorem?</p>
-    
-    </div>
+    </div> -->
 </div>

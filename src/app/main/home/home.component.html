@@ -2,9 +2,14 @@
 <mat-card class="card">
     <div class="home">
     <form>
+      <ul>
+        <li>{{myData.name}}</li> 
+        <li>{{myData.email}}</li> 
+        <li>{{myData.password}}</li>
+      </ul>
       <div class="form-group">
             <label for="name">Name : </label>
-            <input type="name"  [(ngModel)]="myData.name"  name="name" placeholder="Enter name">
+            <input type="name" [(ngModel)]="myData.name"  name="name" placeholder="Enter name" form-control="">
       </div>
       <div class="form-group">
         <label for="email">Email address : </label>
@@ -17,5 +22,6 @@
       
       <button mat-raised-button color="primary" (click)="login()">Submit</button>
     </form>
+
 </div>
 </mat-card>
